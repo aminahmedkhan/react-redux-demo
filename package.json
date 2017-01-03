@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "axios": "^0.12.0",
-    "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
     "classnames": "^2.2.5",
     "formsy-react": "^0.18.1",
@@ -43,6 +42,7 @@
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
+    "babel-polyfill": "6.8.0",
     "babel-cli": "6.8.0",
     "babel-core": "6.8.0",
     "babel-eslint": "^6.1.2",

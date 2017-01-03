@@ -34,7 +34,7 @@ function callApi(data, method, endpoint, authenticated) {
       }
 
       // check  responseData
-      return response
+      return response;
     })
     .catch(error => {
       console.error('APICallErrorInfo: ', error);
@@ -58,7 +58,7 @@ function callApi(data, method, endpoint, authenticated) {
       if (status === 401) browserHistory.push('login');
 
       if (status >= 400) {
-        //let { token, currentUser } = response.data;
+        let { token, currentUser } = response.data;
         localStorage.removeItem('fame.auth.token');
         payload = {
           error: data,
@@ -100,4 +100,4 @@ export default store => next => action => {
     .catch(errorResponse => {
       console.log('ErrorResponse: ', errorResponse);
     });
-}
+};

@@ -1,0 +1,25 @@
+FAILING TESTS:
+
+Profile Reducer
+should load profiles when passed LOAD_PROFILES_SUCCESS
+(correctled initial state in the test to match initial state of the application
+(include error and isRequesting into profiles) AND handled loadProfilesSucess
+in reducer to load all the profiles from action in state also created constant
+type in constants folder)
+
+should add profile when passed CREATE_PROFILE_SUCCESS
+(corrected initital state as above, and createProfileSucess is handled in
+reducer also created constant type in constants folder)
+
+should update profile when passed UPDATE_PROFILE_SUCCESS
+corrected initital state as above, and handled updating profile in reducer also
+created constant type in constants folder)
+
+Async Actions
+should create BEGIN_AJAX_CALL and LOAD_PROFILES_SUCCESS when loading profiles
+(This test is falsely written because loadProfile() does not return a promise)
+
+Store
+should handle creating profiles
+(Handled createProfileSuccess in profileReducer to add newly created profile in
+profile state)
